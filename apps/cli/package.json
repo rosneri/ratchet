@@ -1,0 +1,9 @@
+{
+  "name": "@ratchet/cli",
+  "version": "0.1.0",
+  "type": "module",
+  "bin": { "ratchet": "./bin/ratchet.mjs" },
+  "dependencies": {
+    "@ratchet/core": "*"
+  }
+}

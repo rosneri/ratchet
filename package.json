@@ -1,0 +1,17 @@
+{
+  "name": "ratchet-monorepo",
+  "private": true,
+  "type": "module",
+  "workspaces": ["packages/*", "apps/*"],
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "ratchet": "node --experimental-strip-types apps/cli/src/index.ts",
+    "demo": "node --experimental-strip-types apps/cli/src/index.ts demo",
+    "web": "npm run dev -w @ratchet/web",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2"
+  }
+}
